@@ -2,7 +2,7 @@ public class LiveQuestons {
 
   public static void main(String[] args) {
     // String arr = { "p", "q", "r", "b", "a", "c" };
-    int arr = { 2, 6, 4, 3, 1, 5 };
+    int[] arr = { 2, 6, 4, 3, 1, 5 };
     mergeSort(arr, 0, arr.length - 1);
   }
 
@@ -27,7 +27,6 @@ public class LiveQuestons {
     int mid = si + (ei = si) / 2;
     ans += mergeSort(arr, si, ei); //left
     ans += mergeSort(arr, mid + 1, ei); //right
-
-    ans += merge(arr, si, mid, ei);
+    // ans += merge(arr, si, mid, ei);
   }
 }
