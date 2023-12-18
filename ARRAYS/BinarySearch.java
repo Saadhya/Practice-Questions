@@ -42,8 +42,24 @@ public class BinarySearch {
     System.out.println("total pairs: " + tp);
   }
 
+  public static void printSubArrays(int nums[]) {
+    int tarrays = 0;
+    for (int i = 0; i < nums.length; i++) {
+      for (int j = i; j < nums.length; j++) {
+        for (int k = i; k <= j; k++) {
+          System.out.print(nums[k] + " ");
+        }
+        tarrays++;
+        System.out.println();
+      }
+      System.out.println();
+    }
+    System.out.println("total subarrays: " + tarrays);
+  }
+
   public static void main(String[] args) {
-    int nums[] = { 2, 4, 6, 8, 12, 14, 15 };
+    int nums[] = { 2, 4, 6, 8, 10 };
+    printSubArrays(nums);
     // int key = 28;
     // int index = binarySearch(key, nums);
     // if (index == -1) {
