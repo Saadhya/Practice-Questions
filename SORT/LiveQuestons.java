@@ -28,5 +28,6 @@ public class LiveQuestons {
     ans += mergeSort(arr, si, ei); //left
     ans += mergeSort(arr, mid + 1, ei); //right
     // ans += merge(arr, si, mid, ei);
+    return 0;
   }
 }
