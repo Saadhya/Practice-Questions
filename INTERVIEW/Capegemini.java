@@ -1,7 +1,17 @@
 package INTERVIEW;
+
 import java.util.*;
 
 public class Capegemini {
+
+  public static boolean isPrime(int n) {
+    for (int i = 2; i <= n - 1; i++) {
+      if (n % i == 0) {
+        return false; //not prime
+      }
+    }
+    return true; //prime num
+  }
 
   public static void printPrimes() {
     int num = 0;
@@ -22,13 +32,11 @@ public class Capegemini {
   }
 
   public static void findMax() {
-    ArrayList<Integer> al = new ArrayList<Integer>();
-    al.add(5);
-    al.add(3);
-    al.add(6);
-    al.add(7);
-    al.add(98);
-    al.add(98);
+    // ArrayList<Integer> al = new ArrayList<Integer>();
+    // al.add(5);
+    // al.add(98);
+    // al.add(98);
+    List<Integer> al = Arrays.asList(5, 3, 2, 4, 6, 8, 7, 90, 98);
 
     int maxNum = 0;
     //  System.out.println(maxNum);
@@ -39,6 +47,7 @@ public class Capegemini {
   }
 
   public static void main(String args[]) {
+    System.out.println(isPrime(16) ? "not a prime " : "is a prime");
     findMax();
     printPrimes();
   }
