@@ -1,0 +1,72 @@
+
+FOR JAVA=
+===========
+stream
+java 8 features
+service layer
+orm tools
+testing - controller and serices, how do you handle dbrepo in junit testcases
+expception handling
+db connection- mongo or sql queries and calls
+java collection
+diff interface, abstract class
+
+
+
+// second dary interview
+// class Employee{
+
+//   name
+//   salary
+//   department
+  
+//   =>print details in asc ordder based on salary
+  
+//   public function (){
+//   int sal = 0;
+//   employees=[]
+//   var = employees.stream().map(x-> x.salary).collect(Collectors.toList())
+//   employees.stream().filter(x-> x.salary>50000).forEach(y-> syout(y))
+//   }
+emp- name, id, department
+
+//Object obj = new Object
+// []i = {1, 2, 3, 4}
+
+List<Employee> emp=new ArrayList<Employee>(); 
+emp.add({name:"vishal", id:01, department:"IT"})
+
+if(emp.hasNext()){
+for(int i=0; i<emp.size(); i++){
+emp.get(i);
+}
+}
+emp.filter(emp=> 
+Stream(
+select * from emp groupby deparment
+
+
+@RestController
+public class todo{
+
+@autowired
+private TodoService todoService;
+
+@GetMapping("/gettodo")
+public ArrayList<Employee> getTodo(){
+
+return 
+
+}
+
+// Mongorepository
+
+public class TodoTest{
+
+@test
+public void getTodoTest(){
+
+}
+
+}
+

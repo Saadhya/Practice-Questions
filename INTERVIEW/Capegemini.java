@@ -51,23 +51,6 @@ public class Capegemini {
     findMax();
     printPrimes();
   }
-}
-
-// second dary interview
-// class Employee{
-
-//   name
-//   salary
-//   department
-  
-//   =>print details in asc ordder based on salary
-  
-//   public function (){
-//   int sal = 0;
-//   employees=[]
-//   var = employees.stream().map(x-> x.salary).collect(Collectors.toList())
-//   employees.stream().filter(x-> x.salary>50000).forEach(y-> syout(y))
-//   }
-  
+}  
   
   
